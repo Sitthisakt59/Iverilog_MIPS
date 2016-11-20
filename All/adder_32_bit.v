@@ -15,15 +15,14 @@ module full_adder(a,b,cin,sum,cout);
 	//~cin & a & b | cin & (a | b); // cin'ab + cin(a + b)
 endmodule
 
-module adder_32_bit(a,b,sum,cout);
+module adder_32_bit(a,b,cin,sum,cout);
 	input [31:0] a, b;
+	input cin;
 	output [31:0] sum;
 	output cout;
 	wire [31:0] carry;
 	
-	
-	half_adder ha(a[0],b[0],sum[0],carry[0]);
-	
+	full_adder fa0(a[0],b[0],cin,sum[0],carry[0]);
 	genvar i;
 	generate for(i=1;i<32;i=i+1)
 		begin
