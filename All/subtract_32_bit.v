@@ -1,3 +1,4 @@
+`include "adder_32_bit.v"
 module inverter(i,o);
 	input i;
 	output o;
