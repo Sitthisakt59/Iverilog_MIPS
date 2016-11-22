@@ -1,3 +1,4 @@
+`include "aluControl_32_bit.v"
 module aluControl_32_bit_tb;
 	
 	reg [1:0] aluOp;
