@@ -1,3 +1,4 @@
+`include "slt_32_bit.v"
 module slt_32_bit_tb;
 	
 	reg signed [31:0] a , b;
