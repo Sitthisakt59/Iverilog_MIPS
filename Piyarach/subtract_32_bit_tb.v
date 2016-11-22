@@ -1,3 +1,4 @@
+`include "subtract_32_bit.v"
 module subtract_32_bit_tb;
 	
 	reg signed [31:0] a , b;
