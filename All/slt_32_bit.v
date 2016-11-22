@@ -1,3 +1,4 @@
+`include "subtract_32_bit.v"
 module slt_32_bit(a,b,result);
 	input signed [31:0] a, b;
 	output signed [31:0] result;
