@@ -1,3 +1,4 @@
+`include "adder_32_bit.v"
 module adder_32_bit_tb;
 	
 	reg[31:0] a , b;
